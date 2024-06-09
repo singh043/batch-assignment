@@ -170,6 +170,7 @@ main {
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .heroSection {
@@ -178,6 +179,35 @@ main {
     align-items: center;
     margin-top: 80px;
     padding-left: 10%;
+}
+
+.heroSection-left-star {
+    position: absolute;
+    top: 0;
+    left: -12%;
+    width: 40px;
+    height: 40px;
+    rotate: 45deg;
+    cursor: pointer;
+    transition: scale 0.5s ease-in-out 0s;
+}
+
+.heroSection-left-star:hover {
+    scale: 1.5;
+}
+
+.heroSection-right-star {
+    position: absolute;
+    top: -0.5%;
+    right: -12%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: scale 0.5s ease-in-out 0s;
+}
+
+.heroSection-right-star:hover {
+    scale: 1.5;
 }
 
 .heroSection-left h1 {
@@ -539,6 +569,16 @@ main {
         padding-left: 0;
         gap: 0;
     }
+
+    .heroSection-left-star {
+        top: 0;
+        left: -8%;
+    }
+    
+    .heroSection-right-star {
+        top: -0.5%;
+        right: -8%;
+    }
     
     .heroSection-left h1 {
         font-size: 30px;
@@ -824,6 +864,18 @@ main {
         margin-top: 20px;
         padding-left: 0;
         gap: 0;
+    }
+
+    .heroSection-left-star {
+        top: -0.2%;
+        left: -4%;
+    }
+    
+    .heroSection-right-star {
+        top: -0.1%;
+        right: -6%;
+        width: 40px;
+        height: 40px;
     }
 
     .heroSection-left {
@@ -1131,6 +1183,20 @@ main {
         margin-top: 20px;
         padding-left: 0;
         gap: 10px;
+    }
+
+    .heroSection-left-star {
+        top: -0.2%;
+        width: 35px;
+        height: 35px;
+        left: 0;
+    }
+    
+    .heroSection-right-star {
+        top: 0.2%;
+        right: -4%;
+        width: 35px;
+        height: 35px;
     }
 
     .heroSection-left {
