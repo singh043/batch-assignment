@@ -496,13 +496,17 @@ main {
 
 .ad-section {
     color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
+    position: relative;
+    >:first-child {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
 }
 
 .ad-section .left {
@@ -799,7 +803,6 @@ main {
     
     .ad-section {
         margin-top: 40px;
-        background-image: url(public/banner.png);
         margin-bottom: 60px;
     }
     
@@ -1112,7 +1115,6 @@ main {
     
     .ad-section {
         margin-top: 40px;
-        background-image: url(public/banner.png);
         margin-bottom: 60px;
     }
     
